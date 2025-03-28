@@ -1,0 +1,25 @@
+<button class="theme-toggle" title="切换主题" aria-label="切换主题">
+    <span class="theme-toggle-icon">🌙</span>
+  </button>
+  
+  <script>
+    // 检查本地存储的主题偏好
+    const savedTheme = localStorage.getItem('theme') || 
+                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    // 应用主题
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  
+    // 切换逻辑
+    document.querySelector('.theme-toggle').addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      
+      // 更新按钮图标
+      document.querySelector('.theme-toggle-icon').textContent = 
+        newTheme === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
