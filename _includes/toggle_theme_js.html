@@ -1,31 +1,22 @@
-<script type="text/javascript">
-  window.addEventListener('load', themeChange);
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-  if (currentTheme)
-    document.documentElement.setAttribute('data-theme', currentTheme);
+<button id="dark-mode-toggle" title="Toggle Theme">
+  <svg viewBox="0 0 24 24" width="24" height="24">
+    <path fill="currentColor" d="M12 3a9 9 0 0 0 0 18 9 9 0 0 1 0-18m0-2a11 11 0 0 1 0 22 11 11 0 0 1 0-22z"/>
+  </svg>
+</button>
 
-  function themeChange() {
-    let button = document.querySelector('.theme-toggle');
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("dark-mode-toggle");
 
-    button.addEventListener('click', function (e) {
-      let currentTheme = document.documentElement.getAttribute('data-theme');
-      if (currentTheme === 'dark') {
-        transition();
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-      } else {
-        transition();
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+      // 检查用户的上次选择
+      if (localStorage.getItem("dark-mode") === "true") {
+          document.body.classList.add("dark-mode");
       }
-    });
 
-    let transition = () => {
-      document.documentElement.classList.add('transition');
-      window.setTimeout(() => {
-        document.documentElement.classList.remove('transition');
-      }, 1000);
-    }
-  }
+      // 绑定点击事件
+      toggleButton.addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          localStorage.setItem("dark-mode", document.body.classList.contains("dark-mode"));
+      });
+  });
 </script>
-

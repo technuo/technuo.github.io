@@ -9,7 +9,7 @@
 </head>
 <body>
   {% include header.html %}
-  
+  {% include toggle-theme.html %}
   <main class="content">
     {{ content }}
   </main>
@@ -19,7 +19,8 @@
       <div class="w">
         <!--{{ content }}-->
         {% if site.theme_config.appearance_toggle %}
-          {% include toggle_theme_button.html %}
+        {% include toggle-theme.html %}
+
         {% endif %}
         <div class="credits">
           {%- if site.theme_config.show_copyright == true -%}
