@@ -117,9 +117,9 @@
     color: black;
   }
   .theme-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: fixed !important;  /* 让按钮固定在屏幕上 */
+    bottom: 20px !important;  /* 设置到底部 20px */
+    right: 20px !important;  /* 设置到右侧 20px */
     background: #1F242A;
     color: #ffffff;
     padding: 10px;
