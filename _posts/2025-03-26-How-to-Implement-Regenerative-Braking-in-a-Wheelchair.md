@@ -1,4 +1,11 @@
-![[Weixin Image_20250312144821.jpg]]
+---
+layout: post
+title: "How to implement regenerative braking in a wheelchair"
+date: 2025-03-28
+tags: [embedded]
+---
+
+
 When a wheelchair transitions from **standing mode back to a seated position** or **travels downhill**, the motor enters **generator mode**. If this energy is not utilized, it is wasted and dissipates as heat. By using a **regenerative braking system**, this energy can be recovered and stored in a **battery or supercapacitor (SuperCap)**, thereby extending the wheelchair’s battery life.
 
 ---

@@ -5,10 +5,10 @@
 
 layout: home
 ---
-
+![alt text](<Retro Pixel Logo-technuo.png>)
 # Hi，I am [Nuo] 👋
 
-I am a [Developer]，This is my site.
+**I am a coding enthusiast who speaks fluent Python and dreams in indents. Passionate about EVs and the embedded magic that makes them tick. If it runs on code (or batteries), I’m probably obsessed with it!**
 
 ## New Post
 {% for post in site.posts limit:3 %}
