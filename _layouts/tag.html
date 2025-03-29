@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<div class="tag-page">
+  <h1>标签: {{ page.title }}</h1>
+  
+  <!-- 调试信息 -->
+  <pre style="display:none">
+  当前标签: {{ page.title | inspect }}
+  所有标签: {{ site.tags | inspect }}
+  匹配文章数: {{ site.tags[page.title].size | inspect }}
+  </pre>
+
+  {% if site.tags[page.title].size > 0 %}
+    <ul class="post-list">
+      {% for post in site.tags[page.title] %}
+        <li class="post-item">
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            {{ post.title | escape }}
+          </a>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+            {{ post.date | date: "%Y-%m-%d" }}
+          </time>
+          {% if post.tags %}
+            <div class="post-tags">
+              {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="no-posts">没有找到相关文章</p>
+  {% endif %}
+
+  <a href="{{ '/blog/' | relative_url }}" class="back-link">← 返回博客列表</a>
+</div>
+
+<style>
+  .tag-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  .post-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+  }
+  .post-link {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .post-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 1rem;
+  }
+  .post-tags {
+    margin-top: 0.5rem;
+  }
+  .post-tags .tag {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-right: 0.5rem;
+    color: #555;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #2b6cb0;
+  }
+  .no-posts {
+    color: #666;
+    font-style: italic;
+  }
+</style>

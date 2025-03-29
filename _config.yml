@@ -39,6 +39,8 @@ include:
 moonwalk:
   appearance_toggle: true  # ✅ 启用黑白切换按钮
   color_theme: "dark"     # ✅ 默认亮色模式（可选 "dark", "light", "auto"）
+theme_config:
+  appearance_toggle: true
 
 
 # 自定义导航（添加以下内容）
