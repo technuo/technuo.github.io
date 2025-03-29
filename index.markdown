@@ -5,7 +5,7 @@
 
 layout: home
 ---
-![alt text](\assets\images\Retro Pixel Logo-technuo.png)
+<img src="\assets\images\Retro Pixel Logo-technuo.png" alt="technuo" style="float: left; margin-right: 10px; width: 150px;">
 # Hi，I am [Nuo] 👋
 
 **I am a coding enthusiast who speaks fluent Python and dreams in indents. Passionate about EVs and the embedded magic that makes them tick. If it runs on code (or batteries), I’m probably obsessed with it!**
