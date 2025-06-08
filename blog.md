@@ -5,10 +5,10 @@ permalink: /blog/
 ---
 
 <div class="blog-container">
-    <h1>博客文章</h1>
+    <h1>Blog Posts</h1>
     
     <div class="tag-filter">
-        <h3>按标签筛选：</h3>
+        <h3>Filter by Tags:</h3>
         <div class="tag-buttons">
             {% for tag in site.tags %}
             <button class="tag-button" data-tag="{{ tag[0] }}">{{ tag[0] }}</button>
