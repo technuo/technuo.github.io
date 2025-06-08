@@ -1,46 +1,58 @@
 <header class="site-header">
-  <div class="wrapper">
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for item in site.nav %}
-          <a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endfor %}
-      </div>
+    <nav class="top-nav">
+        <div class="nav-brand">
+            <a href="/">{{ site.title }}</a>
+        </div>
+        <div class="nav-menu">
+            <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                -/
+            </a>
+            <a href="/portfolio/" class="nav-link {% if page.url contains '/portfolio/' %}active{% endif %}">-/Portfolio</a>
+            <a href="/blog/" class="nav-link {% if page.url contains '/blog/' %}active{% endif %}">-/Blog</a>
+            <a href="/resume/" class="nav-link {% if page.url contains '/resume/' %}active{% endif %}">-/Resume</a>
+            <a href="/contact/" class="nav-link {% if page.url contains '/contact/' %}active{% endif %}">-/Contact</a>
+        </div>
     </nav>
-  </div>
 </header>
 
 <style>
 .site-header {
-  padding: 1rem 0;
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    background-color: var(--bg-color);
 }
 
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.top-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.site-nav {
-  display: flex;
-  justify-content: center;
+.nav-brand a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.trigger {
-  display: flex;
-  gap: 2rem;
+.nav-menu {
+    display: flex;
+    gap: 2rem;
 }
 
-.page-link {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.page-link:hover {
-  color: var(--accent-color);
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.nav-link.active {
+    color: var(--accent-color);
 }
 </style>
