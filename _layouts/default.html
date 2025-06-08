@@ -5,20 +5,13 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-
   {% include header.html %}
-
-  <main class="content">
-    {{ content }}
-  </main>
 
   <main class="page-content" aria-label="Content">
     <div class="w">
-      <!--{{ content }}-->
+      {{ content }}
       
-      
-        {% include toggle-theme.html %}
-      
+      {% include toggle-theme.html %}
       
       <div class="credits">
         {%- if site.theme_config.show_copyright == true -%}
@@ -43,6 +36,5 @@
   {% endif %}
 
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
-
 </body>
 </html>
