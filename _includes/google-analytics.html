@@ -1,9 +1,13 @@
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTFR1P8MVN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-RTFR1P8MVN', {
+    'page_title': '{{ page.title }}',
+    'page_location': '{{ page.url | absolute_url }}',
+    'page_path': '{{ page.url }}'
+  });
 </script> 
