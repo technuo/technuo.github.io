@@ -22,6 +22,17 @@ title: "<TECH/NUO>"
 description: "DEVELOPER/kEEP CALM AND CODE ON!"
 url: "https://technuo.github.io"  # 替换为你的 GitHub 用户名
 
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Portfolio
+    url: /portfolio/
+  - title: Contact
+    url: /contact/
+
 include:
   - assets/js
   - assets/css
