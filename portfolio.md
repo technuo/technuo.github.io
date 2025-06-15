@@ -7,6 +7,21 @@ permalink: /portfolio/
 <section class="portfolio-container">
   <h1>{{ page.title }}</h1>
   
+  <!-- Canva Portfolio Section -->
+  <div class="canva-portfolio">
+    <h2>设计作品集</h2>
+    <div class="canva-embed">
+      <iframe src="https://www.canva.com/design/DAGpyWq0L8w/VtJXuxndt_eM1sDihw6Rvw/view?embed" 
+              width="100%" 
+              height="600" 
+              frameborder="0" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Existing Projects Section -->
+  <h2>项目展示</h2>
   <div class="project-grid">
     {% for project in site.portfolio %}
       <article class="project-card">
