@@ -39,8 +39,13 @@ I am currently studying **E-mobility Development Engineering** at YH with expert
 
 ## Work Experience  
 
+### Founder at kafeAI.tech  
+**Kafe AI - Small Business Management SaaS Platform** | 2025 –   
+- Developed a full-stack SaaS platform using Next.js, React, and MongoDB, integrating Google Gemini API to provide intelligent business analytics and inventory management for small coffee shops
+- Implemented responsive dashboard with real-time data visualization, reducing operational costs by 30-40% and inventory waste by 50-75% for coffee shop owners  
+
 ### Co-Founder & Restaurant Manager  
-**Tant Anci och Fröken Sara** | 2019 – 2024  
+**Tant Anci och Fröken Sara** | 2019 –   
 - Led 12-member team achieving 4.8/5 customer rating  
 - Optimized supply chain reducing food waste by 30%  
 
@@ -58,6 +63,9 @@ I am currently studying **E-mobility Development Engineering** at YH with expert
 - Python · JS · HTML/CSS 
 - Machine learning, Data analysis
 - C++ · Arduino · FreeRTOS  
+- Next.js, React.js, Node.js, MongoDB, TypeScript, AI Integration, 
+RESTful APIs, Data Visualization, Full-Stack Development, 
+Cloud Deployment
 
 **Engineering**
 - Battery Testing · Embedded Systems  
