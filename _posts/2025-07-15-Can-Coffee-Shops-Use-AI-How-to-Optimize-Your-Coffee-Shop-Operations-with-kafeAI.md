@@ -1,8 +1,8 @@
 ---
 title: "Can Coffee Shops Use AI? How to Optimize Your Coffee Shop Operations with kafeAI"
-date: "2025-07-17"
+date: "2025-07-15"
 author: "KafeAI"
-excerpt: " Tired of spending hours every night reconciling receipts and guessing tomorrow's inventory needs? Discover how kafeAI transforms coffee shop management from guesswork to data-driven decisions. Learn how AI can reduce pastry waste by 67%, cut milk waste by 78%, and save 90% of your daily management time—all through simple 3-minute daily check-ins that feel as easy as ordering your morning coffee."
+excerpt: "Tired of spending hours every night reconciling receipts and guessing tomorrow's inventory needs? Discover how kafeAI transforms coffee shop management from guesswork to data-driven decisions. Learn how AI can reduce pastry waste by 67%, cut milk waste by 78%, and save 90% of your daily management time—all through simple 3-minute daily check-ins that feel as easy as ordering your morning coffee."
 image: "/blog/images/notionbanner.png"
 tags: ["Coffee-Shop-Management", "Small-Business-AI", "AI-Analytics", "Inventory-Management", "kafeAI", "Operational-Efficiency"]
 ---
