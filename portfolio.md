@@ -20,6 +20,19 @@ permalink: /portfolio/
     </div>
   </div>
 
+  <!-- KafeAI Pitch Deck Section -->
+  <div class="kafeai-pitch-section">
+    <h2>KafeAI Pitch Deck</h2>
+    <div class="pitch-card">
+      <a href="{{ '/portfolio/kafeai_pitch_deck.html' | relative_url }}" target="_blank" class="pitch-link">
+        <div class="pitch-preview">
+          <h3>🚀 KafeAI Pitch Deck</h3>
+          <p>AI-Powered Coffee Shop Management Platform - Interactive presentation showcasing the complete business vision, technical architecture, and market opportunity.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
   <!-- Existing Projects Section -->
   <h2>Projects</h2>
   <div class="project-grid">
